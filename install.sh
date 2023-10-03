@@ -65,6 +65,6 @@ mount -o x-mount.mkdir /dev/disk/by-partlabel/boot /mnt/boot
 echo "Mounting tmpfs root partition..."
 mount -t tmpfs none /mnt
 
-echo "Install NixOS..."
+echo "Installing NixOS..."
 nixos-generate-config --root /mnt
 nixos-install --no-root-passwd
